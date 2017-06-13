@@ -1,3 +1,5 @@
-sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
-sudo apt-get update
-sudo apt-get install skype
+wget https://go.skype.com/skypeforlinux-64.deb
+sudo dpkg -i sudo dpkg -i skypeforlinux-64.deb
+rm skypeforlinux-64.deb
+sudo apt-get install -f
+sudo apt autoremove
